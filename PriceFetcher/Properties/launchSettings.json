@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "PriceFetcher": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7298"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "DockerfileRunArguments": "--init",
+      "httpPort": 31524,
+      "useSSL": false
+    }
+  }
+}
