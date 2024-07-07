@@ -34,7 +34,7 @@ namespace PriceFetcher
         [Function("CryptoPriceFetcher")]
         public async Task Run([TimerTrigger("0 */3 * * * *")] TimerInfo myTimer)
         {
-            _logger.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+            _logger.LogInformation($"CryptoPriceFetcher Azure Function: C# Timer trigger function executed at: {DateTime.Now}");
 
             try
             {
