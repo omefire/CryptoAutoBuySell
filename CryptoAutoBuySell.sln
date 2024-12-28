@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriceFetcher", "PriceFetcher\PriceFetcher.csproj", "{C920F8B0-CACD-42E5-9259-965EBF12F820}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "MinswapTokenPriceProvider", "NodejsConsoleApp1\MinswapTokenPriceProvider.njsproj", "{4E71562B-F4D2-49F5-85C3-E4227AA0BDBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C920F8B0-CACD-42E5-9259-965EBF12F820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C920F8B0-CACD-42E5-9259-965EBF12F820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C920F8B0-CACD-42E5-9259-965EBF12F820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E71562B-F4D2-49F5-85C3-E4227AA0BDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E71562B-F4D2-49F5-85C3-E4227AA0BDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E71562B-F4D2-49F5-85C3-E4227AA0BDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E71562B-F4D2-49F5-85C3-E4227AA0BDBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

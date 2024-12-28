@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "TokenPriceFetcher": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7049"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 34924,
+      "useSSL": false
+    }
+  }
+}
