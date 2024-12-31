@@ -1,19 +1,16 @@
-//import { Lucid, Blockfrost } from "lucid-cardano";
 import { Asset, BlockfrostAdapter, NetworkId } from "@minswap/sdk";
-//const { Asset, BlockfrostAdapter, NetworkId } = await import ('@minswap/sdk');
-//import "@minswap/sdk";
 import { BlockFrostAPI } from "@blockfrost/blockfrost-js";
 import axios from "axios";
-import env from './env.json' assert { type: 'json' };
+import fs from 'fs';
+const env = JSON.parse(fs.readFileSync("./env.json").toString());
+const api = new BlockfrostAdapter({
+    networkId: NetworkId.MAINNET,
+    blockFrost: new BlockFrostAPI({
+        projectId: env.BLOCKFROST_API_KEY,
+        network: "mainnet",
+    }),
+});
 async function getSNEKPrice() {
-    console.log(env);
-    const api = new BlockfrostAdapter({
-        networkId: NetworkId.MAINNET,
-        blockFrost: new BlockFrostAPI({
-            projectId: env.BLOCKFROST_API_KEY,
-            network: "mainnet",
-        }),
-    });
     const snekAdaPool = await api.getV2PoolByPair(Asset.fromString("lovelace"), Asset.fromString("279c909f348e533da5808898f87f9a14bb2c3dfbbacccd631d927a3f534e454b") // SNEK
     );
     if (snekAdaPool) {
